@@ -15,8 +15,7 @@ const alertDiscord = () => {
 client.on('ready', () => {
   console.log('Bot online!');
 
-  cron.schedule('* * * * *', alertDiscord);
-  // cron.schedule('0 22 * * *', alertDiscord);
+  cron.schedule('0 22 * * *', alertDiscord);
 });
 
 client.login(BOT_TOKEN);
