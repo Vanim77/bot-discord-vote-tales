@@ -9,7 +9,7 @@ const client = new Discord.Client({ intents: [Discord.GatewayIntentBits.Guilds ]
 const alertDiscord = () => {
   const channel = client.channels.cache.get(CHANNEL_ID);
 
-  channel.send(`Hora de votar no servidor! <@&${ROLE_ID}>`);
+  channel.send(`Hora de votar no servidor! https://ragnatales.com.br/profile/vote <@&${ROLE_ID}>`);
 }
 
 client.on('ready', () => {
